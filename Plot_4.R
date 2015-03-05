@@ -69,7 +69,7 @@ legend("topright", col=c("black","red","blue"), c("Sub_metering_1",
 
 #plot (2, 2)
 plot(hpc_subset$date_time, hpc_subset$Global_reactive_power,  type="l", 
-     col="black")
+     col="black", xlab = "Global_reactive_power", ylab = "datetime")
 
 # Closes the png devices
 dev.off()
