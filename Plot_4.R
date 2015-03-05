@@ -50,11 +50,11 @@ par(mfrow = c(2, 2))
 
 #plot (1,1)
 plot(hpc_subset$date_time, hpc_subset$Global_active_power, 
-     type="l", xlab="", ylab="Global Active Power (kilowatts)")
+     type="l", xlab="", ylab="Global Active Power")
 
 #plot (1, 2)
 plot(hpc_subset$date_time, hpc_subset$Voltage,  type="l", 
-     col="black", xlab = '', ylab = 'Voltage')
+     col="black", xlab = 'datetime', ylab = 'Voltage')
 
 #plot (2, 1)
 plot(hpc_subset$date_time, hpc_subset$Sub_metering_1,  type="l", 
@@ -69,7 +69,7 @@ legend("topright", col=c("black","red","blue"), c("Sub_metering_1",
 
 #plot (2, 2)
 plot(hpc_subset$date_time, hpc_subset$Global_reactive_power,  type="l", 
-     col="black", xlab = "Global_reactive_power", ylab = "datetime")
+     col="black", ylab = "Global_reactive_power", xlab = "datetime")
 
 # Closes the png devices
 dev.off()
