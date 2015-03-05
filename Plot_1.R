@@ -4,7 +4,7 @@
 # saved in the proper working directory".  The first 20 lines of codes
 # attempts to do that for you.
 
-setwd("C:/Users/Owner/Desktop/ExploreData/Course_Project_One")
+setwd("..//Course_Project_One")
 
 # Checks for the directory the files that will be downloaded into
 if(!file.exists("Course_Project_One")){
